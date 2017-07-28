@@ -1,0 +1,146 @@
+[
+	{
+		"title": "应急管理",
+		"icon": "fa-cubes",
+		"spread": true,
+		"children": [
+			{
+				"title": "报警信息",
+				"icon": "&#xe641;",
+				"href": "table.html"
+			}, {
+				"title": "处理报警",
+				"icon": "&#xe63c;",
+				"href": "table1.html"
+			}
+		]
+	}, {
+		"title": "安全管理",
+		"icon": "fa-cogs",
+		"spread": false,
+		"children": [
+			{
+				"title": "室外定位",
+				"icon": "&#xe641;",
+				"href": "begtable.html"
+			}, {
+				"title": "室外轨迹",
+				"icon": "&#xe641;",
+				"href": "navbar.html"
+			}, {
+				"title": "安措费管理",
+				"icon": "&#xe641;",
+				"href": "navbar.html"
+			}, {
+				"title": "安管人员",
+				"icon": "&#xe641;",
+				"href": "navbar.html"
+			}
+		]
+	}, {
+		"title": "人员管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "管理人员",
+				"icon": "fa-check-square-o",
+				"href": "icheck.html"
+			},
+			{
+				"title": "作业人员",
+				"icon": "fa-check-square-o",
+				"href": "icheck.html"
+			},
+			{
+				"title": "进出区域登记",
+				"icon": "fa-check-square-o",
+				"href": "icheck.html"
+			},
+			{
+				"title": "进出隧道登记",
+				"icon": "fa-check-square-o",
+				"href": "icheck.html"
+			}
+		]
+	}, {
+		"title": "设备管理",
+		"icon": "fa-address-book",
+		"href": "",
+		"spread": false,
+		"children": [
+			{
+				"title": "北斗终端设备",
+				"icon": "fa-github",
+				"href": "https://www.github.com/"
+			}, {
+				"title": "基站设备",
+				"icon": "fa-qq",
+				"href": "http://www.qq.com/"
+			}, {
+				"title": "北斗终端批量上传",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}
+		]
+	}, {
+		"title": "系统管理",
+		"icon": "fa-stop-circle",
+		"href": "https://www.baidu.com",
+		"spread": false,
+		"children": [
+			{
+				"title": "组织结构",
+				"icon": "fa-github",
+				"href": "https://www.github.com/"
+			}, {
+				"title": "账户信息",
+				"icon": "fa-qq",
+				"href": "http://www.qq.com/"
+			}, {
+				"title": "项目信息",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}, {
+				"title": "项目标注绘制",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}, {
+				"title": "项目区域绘制",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}, {
+				"title": "更新APP版本",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}, {
+				"title": "项目部关联",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}, {
+				"title": "项目部关联查看",
+				"icon": "&#xe609;",
+				"href": "http://fly.layui.com/"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+[
+	{
+		"title": "应急管理",
+		"icon": "fa-cubes",
+		"spread": true,
+		"children": [
+			{
+				"title": "报警信息",
+				"icon": "&#xe641;",
+				"href": "../turn/roomAlarmInfo.do"
+			}, {
+				"title": "处理报警",
+				"icon": "&#xe63c;",
+				"href": "../turn/roomAlarmDeal.do"
+			}
+		]
+	}, {
+		"title": "居家安防",
+		"icon": "fa-cubes",
+		"spread": true,
+		"children": [
+			{
+				"title": "网关管理",
+				"icon": "&#xe641;",
+				"href": "../turn/gatewayManager.do"
+			}, {
+				"title": "设备类型",
+				"icon": "&#xe63c;",
+				"href": "../turn/deviceTypeManager.do"
+			}, {
+				"title": "设备信息",
+				"icon": "&#xe63c;",
+				"href": "../turn/roomAlarmDeal.do"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+[
+	{
+		"title": "应急管理",
+		"icon": "fa-cubes",
+		"spread": true,
+		"children": [
+			{
+				"title": "报警信息",
+				"icon": "&#xe641;",
+				"href": "table.html"
+			}, {
+				"title": "处理报警",
+				"icon": "&#xe63c;",
+				"href": "table1.html"
+			}
+		]
+	}, {
+		"title": "安全管理",
+		"icon": "fa-cogs",
+		"spread": false,
+		"children": [
+			{
+				"title": "室外定位",
+				"icon": "&#xe641;",
+				"href": "map_indoor.html"
+			},
+			{
+				"title": "离床报警",
+				"icon": "&#xe641;",
+				"href": "offBedAlarmV2.html"
+			}
+		]
+	}, {
+		"title": "人员管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "老人管理",
+				"icon": "fa-check-square-o",
+				"href": "older_manager.html"
+			},
+			{
+				"title": "护工管理",
+				"icon": "fa-check-square-o",
+				"href": "nurse_manager.html"
+			}
+		]
+	}, {
+		"title": "机构审核",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "养老机构审核",
+				"icon": "fa-check-square-o",
+				"href": "through.html"
+			},
+			{
+				"title": "审核",
+				"icon": "fa-check-square-o",
+				"href": "nurse_manager.html"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

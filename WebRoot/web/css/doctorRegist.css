@@ -1,0 +1,16 @@
+
+.container{width:100%; min-width: 1200px; position: absolute; top:0; bottom:0;}
+
+/*内容*/
+.container .content{width:100%; background: #aaa; position: absolute; top:100px; z-index: 1;}
+
+/****注册****/
+.container .register{width:100%; height:500px; background: url(../images/BG_04.png);}
+.container .register1{width:1200px; height:500px; margin:0 auto; margin-bottom:30px; overflow: hidden;}
+.container .register .left{width:400px; height:100%; border:1px solid #999; float:left; padding-top:50px; background: #fff; opacity: 0.93;}
+.container .register .left p{font-size: 16px; margin-bottom: 10px; text-align: center;}
+.container .register .left span{width:auto; height:12px; font-size: 12px; margin-left: 10%; color:red; display:none;}
+.container .register .left input:not(.free){width:60%; height:30px; border:1px solid #ccc; border-radius: 5px; padding-left: 10px; margin:15px 0 0 0;}
+.container .register .left div{float:left; width:100%;}
+.container .register .left span.title{display:block; color:#000; float:left; margin:22px 0 0 40px; }
+.container .register .left #oBtn1{width:50%; height:30px; border:none; border-radius: 5px; background: #ff3f3a; margin-left:25%; margin-top:30px; color:#fff; outline:none;}

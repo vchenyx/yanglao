@@ -1,0 +1,33 @@
+[
+	{
+		"title": "绑定医疗机构",
+		"icon": "fa-cubes",
+		"spread": true,
+		"href": "../turn/bindMedical.do"
+	},
+	{
+		"title": "老人审核",
+		"icon": "fa-cubes",
+		"spread": true,
+		"href": "../turn/olderShenHe.do"
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

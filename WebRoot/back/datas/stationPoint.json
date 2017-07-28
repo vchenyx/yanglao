@@ -1,0 +1,77 @@
+[
+	{
+		"title": "托底扶助",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/PaimHelep.do"
+	}, {
+		"title": "老人档案",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/pensionOldManager.do"
+	}, {
+		"title": "工单管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/orderManager.do",
+	}, {
+		"title": "服务记录",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/serviceRecord.do",
+	}, {
+		"title": "服务商管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "信息管理",
+				"icon": "&#xe641;",
+				"href": "../turn/facilitatorOldManage.do"
+			}, {
+				"title": "分类管理",
+				"icon": "&#xe63c;",
+				"href": "../turn/facilitatorClassManage.do"
+			}
+		]
+	}, {
+		"title": "社区管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/communityManage.do",
+	}, {
+		"title": "人员管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/ToUserManager.do"
+	}, {
+		"title": "来电弹屏",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/callAlert.do"
+	}, {
+		"title": "坐席首页",
+		"icon": "&#x1002;",
+		"spread": false,
+		"href": "../turn/turnCallHome.do"
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

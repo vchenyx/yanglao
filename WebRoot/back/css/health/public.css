@@ -1,0 +1,19 @@
+
+body,html{background: #f2f2f2;}
+.container{width:100%; min-width: 1200px; position: absolute; top:0; bottom:0; overflow: auto; overflow-x:hidden;}
+
+/*头部*/
+.container .top{width:100%; height:100px; background: #fff; margin:0 auto;}
+.container .header{width:1280px; height:100px; background: #fff; margin:0 auto;}
+.container .header .header_content{width:1280px; height:100px; margin:0 auto;}
+.container .header .header_content .logo{width:80px; height:61px; float: left; margin-top:20px;}
+.container .header .header_content .nav{height:100px; float:right; margin-right:240px;}
+.container .header .header_content .nav ul{float:left;}
+.container .header .header_content .nav ul li{width:120px; height:100px; float:left; cursor: pointer;}
+.container .header .header_content .nav ul li div{width:120px; height:100px;}
+.container .header .header_content .nav ul li div.out{width:120px;}
+.container .header .header_content .nav ul li div.liTop{width:120px; height:96px;}
+.container .header .header_content .nav ul li div.liTop p{text-align: center; color:#000; line-height: 100px;}
+.container .header .header_content .nav ul li div.liBottom{width:106px; height:4px; margin:0 auto;}
+.active{background: #67a331;}
+.container .header .header_content .nav ul li div.liBottom div{width:0; height:0; background: #67a331; margin:0 auto;}

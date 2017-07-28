@@ -1,0 +1,23 @@
+
+.container{width:100%; position: absolute; top:0; bottom:0;}
+
+/*内容*/
+.container .content{width:100%; height:100%; background: #fff; overflow: auto; z-index: 1;}
+
+/****注册****/
+.container .register{width:1000px; min-height:500px;}
+.container .register .left{width:1000px; height:100%; background: #fff;}
+.container .register .left .inp_out{width:100%; float:left;}
+.container .register .left .add_img{margin-top:10px;}
+.container .register .left .inp_out #place{float:left; margin:5px 0 0 20px;}
+.container .register .left .inp_out #place select{width:150px; height:30px; margin-top:10px;}
+.container .register .left .inp_out .textarea{width:456px; height:50px; margin:10px 0 0 20px;}
+.container .register .left .inp_out .img_out{margin-left:20px; float:left;}
+.container .register .left .inp_out .img_out .img{width:200px; height:200px; float:left; margin-right:10px; position: relative; overflow: hidden;}
+.container .register .left .inp_out .img_out .img img{width:200px; height:200px;}
+.container .register .left p{font-size: 16px; margin-bottom: 10px; text-align: center;}
+.container .register .left span.title{display:block; width:100px; height:30px; text-align: right; color:#000; float:left; margin:15px 0 0 20px; line-height: 30px;}
+.container .register .left .inp{width:300px; float:left; height:30px; border:1px solid #ccc; padding-left: 10px; margin:15px 0 0 20px; line-height: 30px; outline: none;}
+.container .register .left #oBtn1{width:200px; height:30px; border:none; border-radius: 5px; background: #ff3f3a; margin:10px 0 30px 400px; color:#fff; outline:none; cursor: pointer;}
+.container .register .left .inp_out #through{width:310px; height:30px; margin:20px auto;}
+.container .register .left .inp_out #through .radio_through{margin-left:20px;}

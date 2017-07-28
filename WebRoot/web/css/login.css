@@ -1,0 +1,37 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+li { list-style: none}
+img { vertical-align: top}
+a { text-decoration: none;  color: #666;}
+input{outline:none;}
+body{font-family:"Microsoft YaHei";}
+
+.container{width:100%; height:100%; overflow: hidden;}
+
+
+/*********内容区***********/
+#login .content{position:absolute; left:0; top:50%; margin-top:-278px; width:100%; z-index: 1;}
+#login .content .center{width:100%; height:576px; background: #daf3ff;}
+#login .content .center .center_1{width:1200px; height:100%; margin:0 auto;}
+#login .content .center .center_1 .left{width:800px; height:100%; float:left;}
+#login .content .center .center_1 .left img{width:800px; height:445px; margin-top:87px;}
+#login .content .center .center_1 .right{width:398px; height:100%; float:left;}
+#login .content .center .center_1 .right .login_infor{width:398px; height:407px; margin-top:87px; background: url(../images/DLK_bg.png);  padding-top:20px;}
+#login .content .center .center_1 .right .login_infor p{text-align: center; color:#fff;}
+#login .content .center .center_1 .right .login_infor .form{width:250px; height:234px; margin-left:75px;; margin-top:50px;}
+#login .content .center .center_1 .right .login_infor .form .sp1{margin-bottom: 20px;}
+#login .content .center .center_1 .right .login_infor .form .sp2{color:red; display:none;}
+#login .content .center .center_1 .right .login_infor .form input{width:100%; height:36px; margin-bottom:20px; margin-top:10px; border:1px solid #b3b3b3; padding-left:30px; border-radius: 5px;}
+#login .content .center .center_1 .right .login_infor .form .inp1{background: url(../images/USER_nor.png) 10px center no-repeat;}
+#login .content .center .center_1 .right .login_infor .form .inp2{background: url(../images/password_nor.png) 10px center no-repeat;}
+#login .content .center .center_1 .right .login_infor .form .inp3{width:45%; height:36px; margin-bottom:10px; border:1px solid #b3b3b3; padding-left:10px; border-radius: 5px;}
+#login .content .center .center_1 .right .login_infor .form .yzm_img{width:45%; height:36px; border:1px solid #b3b3b3; border-radius: 5px; float:right;}
+#login .content .center .center_1 .right .login_infor .form .oBtn{width:100%; height:36px; background: #fea53c; border:none; margin-top:20px; border-radius: 5px; color:#fff; text-align: center; padding-left:0;}
+#login .content .center .center_1 .right .login_infor span{display:block; text-align: center; color:#666; font-size: 12px; margin-top:10px;}
+
+
+
+
+
+
+
+

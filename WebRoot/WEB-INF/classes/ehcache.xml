@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	maxElementsInMemory：属性用于指定缓存中最多可放多少个对象。
+	eternal：属性指定缓存是否永久有效。
+	timeToIdleSeconds：属性指定缓存多久未被使用便清理掉。
+	timeToLiveSeconds：属性指定缓存的生命长度。
+	diskPersistent：属性指定缓存是否被持久化到硬盘中，保存路径由<diskStore>标签指定。
+ -->
+<ehcache>
+    <diskStore path="java.io.tmpdir" />  
+    <defaultCache
+    	maxElementsInMemory="10000" 
+    	eternal="false"  
+        timeToIdleSeconds="300" 
+        timeToLiveSeconds="180" 
+        overflowToDisk="true"
+        maxElementsOnDisk="10000000"
+        diskPersistent="false" 
+        diskExpiryThreadIntervalSeconds="120" 
+        memoryStoreEvictionPolicy="FIFO" 
+    />  
+     
+    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache"
+		   maxElementsInMemory="10000" 
+	       eternal="true" 
+	       overflowToDisk="true" />
+	
+	<cache name="org.hibernate.cache.internal.StandardQueryCache"
+	       maxElementsInMemory="10000" 
+	       eternal="false" 
+	       timeToLiveSeconds="180"
+	       overflowToDisk="true" />	
+	
+	
+	<!--
+	java文件注解查找cache方法名的策略：如果不指定java文件注解中的region="ehcache.xml中的name的属性值", 
+	则使用name名为com.lysoft.bean.user.User的cache(即类的全路径名称), 如果不存在与类名匹配的cache名称, 则用 defaultCache
+	如果User包含set集合, 则需要另行指定其cache
+	例如User包含citySet集合, 则也需要
+	添加配置到ehcache.xml中
+	  
+    <cache name="com.jinkun.beans.JUserInfo" maxElementsInMemory="2000" eternal="false" 
+	       timeToIdleSeconds="120" timeToLiveSeconds="120"
+	       overflowToDisk="true" /> 
+	  -->     
+	 
+</ehcache>

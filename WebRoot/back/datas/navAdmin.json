@@ -1,0 +1,54 @@
+[
+	{
+		"title": "人员管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "老人管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/pensionOldManager.do"
+			},
+			{
+				"title": "护工管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/pensionNurseManager.do"
+			}
+		]
+	}, {
+		"title": "机构审核",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "养老机构审核",
+				"icon": "fa-check-square-o",
+				"href": "through.html"
+			},
+			{
+				"title": "审核",
+				"icon": "fa-check-square-o",
+				"href": "nurse_manager.html"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

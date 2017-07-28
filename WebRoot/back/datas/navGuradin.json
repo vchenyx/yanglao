@@ -1,0 +1,55 @@
+[
+	 {
+		"title": "健康管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "地图定位",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "报警管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "报警信息",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "信息管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "老人管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/guradianOldManager.do"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

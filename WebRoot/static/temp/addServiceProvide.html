@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all" />
+	</head>
+	<body>
+		<form class="layui-form">
+			<div class="layui-form-item" style="margin-top:20px;">
+				<label class="layui-form-label" style="width:80px;"><font color="red" style="size:2px" >*</font>æå¡åç§°ï¼Â</label>
+				<div class="layui-input-block">
+					<input type="text" id="serviceName" placeholder="è¯·è¾å¥æå¡åç§°" autocomplete="off" class="layui-input" style="width:400px; margin-right:30px;">
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top:20px;">
+				<label class="layui-form-label" style="width:80px;"><font color="red" style="size:2px" >*</font>æå¡æ è¯­ï¼Â</label>
+				<div class="layui-input-block">
+					<input type="text" id="serviceBiaoyu" lay-verify="pass" placeholder="è¯·è¾å¥æå¡æ è¯­" autocomplete="off" class="layui-input" style="width:400px; margin-right:30px;">
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top:20px;">
+				<label class="layui-form-label" style="width:80px;"><font color="red" style="size:2px" >*</font>æå¡åå®¹ï¼Â</label>
+				<div class="layui-input-block">
+					<input type="text" id="serviceContent" placeholder="è¯·è¾å¥æå¡åå®¹" autocomplete="off" class="layui-input" style="width:400px; margin-right:30px;">
+			</div>
+			<div class="layui-form-item" style="margin-top:20px;">
+				<label class="layui-form-label" style="width:80px;"><font color="red" style="size:2px" >*</font>æ¶è´¹æ åï¼Â</label>
+				<div class="layui-input-block">
+					<input type="text" id="serviceMoney" placeholder="è¯·è¾å¥æ¶è´¹æ å" autocomplete="off" class="layui-input" style="width:400px; margin-right:30px;">
+				</div>
+			</div>
+			<div class="layui-form-item" style="margin-top:20px;">
+				<label class="layui-form-label" style="width:80px;"><font color="red" style="size:2px" >*</font>æ³¨æäºé¡¹ï¼Â</label>
+				<div class="layui-input-block">
+					<input type="text" id="serviceCare" placeholder="è¯·è¾å¥æ³¨æäºé¡¹" autocomplete="off" class="layui-input" style="width:400px; margin-right:30px;">
+				</div>
+			</div>
+	</form>
+		<script type="text/javascript"  src="../js/jquery-1.8.3.min.js"></script> 
+		<script type="text/javascript" src="../plugins/layui/layui.js"></script>
+		
+		<script type="text/javascript">
+			/* layui.config({
+				base: '<%=basePath %>manager/js/'
+			}).use(['element', 'layer','form'], function() {
+				var element = layui.element(),
+					$ = layui.jquery,
+					layer = layui.layer,
+					form = layui.form();
+//				
+			}); */
+			
+		</script>
+	</body>
+</html>

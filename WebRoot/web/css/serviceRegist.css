@@ -1,0 +1,28 @@
+
+.container{width:100%; min-width: 1200px; position: absolute; top:0; bottom:0; overflow: hidden;}
+
+/*内容*/
+.container .content{width:100%; height:100%; min-width: 1200px; background: #fff; overflow: auto; z-index: 1;}
+
+/****注册****/
+.container .content .register{width:1200px; min-height:500px; margin:10px auto; position: relative;}
+.container .content .register .left{width:1200px; border:1px solid #999; padding-top:50px; background: #fff; margin:0 auto;}
+.container .content .register .left .inp_out{width:100%; float:left;}
+.container .content .register .left .add_img{margin-top:10px;}
+.container .content .register .left .inp_out #place{float:left; margin:5px 0 0 20px;}
+.container .content .register .left .inp_out #place select{width:150px; height:30px; margin-top:10px;}
+.container .content .register .left .inp_out .textarea{width:456px; height:50px; margin:10px 0 0 140px;}
+.container .content .register .left .inp_out .img_out{margin-left:140px; float:left;}
+.container .content .register .left .inp_out .img_out .img{width:200px; height:200px; float:left; margin-right:10px; position: relative; overflow: hidden;}
+.container .content .register .left .inp_out .img_out .img .face{display:none; width:200px; height:200px; position: absolute; top:0; left:0; background: #000; opacity: 0.4; filter:alpha(opacity=40)}
+.container .content .register .left .inp_out .img_out .img .del{display:none; width:70px; height:30px; position: absolute; top:90px; left:75px; background: #009688; z-index: 2; text-align: center; color:#fff; line-height: 30px;}
+.container .content .register .left .inp_out .img_out .img img{width:200px; height:200px;}
+.container .content .register .left p{font-size: 16px; margin-bottom: 10px; text-align: center;}
+.container .content .register .left #error{width:auto; height:12px; font-size: 12px; margin-left: 140px; color:red; display:none;}
+.container .content .register .left span.title{display:block; width:100px; height:30px; text-align: right; color:#000; float:left; margin:15px 0 0 20px; line-height: 30px;}
+.container .content .register .left .inp{width:200px; float:left; height:30px; border:1px solid #ccc; padding-left: 10px; margin:15px 0 0 20px; line-height: 30px; outline: none;}
+.container .content .register .left #oBtn1{width:200px; height:30px; border:none; border-radius: 5px; background: #ff3f3a; margin:30px 0 30px 500px; color:#fff; outline:none; cursor: pointer;}
+
+
+/*地图*/
+.container .content .register #container{width:500px; height:500px; position: absolute; top:93px; right:20px; border:1px solid #ddd;}

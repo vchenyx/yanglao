@@ -1,0 +1,235 @@
+[
+	 {
+		"title": "居家养老",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "紧急救助",
+				"icon": "fa-check-square-o",
+				"spread": false,
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "安全岛报警查询",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "加盟商查询",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "老年人查询",
+				"icon": "fa-check-square-o",
+				"spread": false,
+				"href": "../turn/pensionOldManager.do"
+			}, {
+				"title": "退网查询",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "服务商管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "服务商管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/facilitatorOldManage.do"
+			}, {
+				"title": "服务商分类管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/facilitatorClassManage.do"
+			}, {
+				"title": "服务记录",
+				"icon": "fa-check-square-o",
+				"href": "../turn/facilitatorClassManage.do"
+			}
+		]
+	}, {
+		"title": "家庭服务",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "工单管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "信息管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "回访",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "投诉列表",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {    
+				"title": "评价列表",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "呼叫中心",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "来电列表",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "养老服务",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "日间照料",
+				"icon": "fa-check-square-o",
+				"href": "../turn/dayCare.do"
+			}, {
+				"title": "志愿服务",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "志愿者档案",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "帮扶对象",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "黄手环",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "位置信息",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "实时位置",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "历史位置",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "安全岛",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "定位统计",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}, {
+				"title": "亲情号码",
+				"icon": "fa-check-square-o",
+				"href": "../turn/chooseMain.do"
+			}
+		]
+	}, {
+		"title": "入网用户",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "基本信息",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "已发放终端",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "未发放终端",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "终端信息库",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}
+		]
+	}, {
+		"title": "健康管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "服务项目管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "健康生理管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "健康档案管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}
+		]
+	}, {
+		"title": "远程看护",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "老人看护",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "居家监管",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}
+		]
+	}, {
+		"title": "客服管理",
+		"icon": "&#x1002;",
+		"spread": false,
+		"children": [
+			{
+				"title": "在线客服管理",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "应答库分类",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}, {
+				"title": "应答库内容",
+				"icon": "fa-check-square-o",
+				"href": "../turn/alarmManager.do"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

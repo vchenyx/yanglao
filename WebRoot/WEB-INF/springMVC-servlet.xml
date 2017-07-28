@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:mvc="http://www.springframework.org/schema/mvc"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       	xmlns:aop="http://www.springframework.org/schema/aop"    
+       	xmlns:context="http://www.springframework.org/schema/context" 
+       	xmlns:tx="http://www.springframework.org/schema/tx"  
+   		xsi:schemaLocation="http://www.springframework.org/schema/beans
+   		http://www.springframework.org/schema/beans/spring-beans.xsd  
+       http://www.springframework.org/schema/aop 
+       http://www.springframework.org/schema/aop/spring-aop.xsd  
+       http://www.springframework.org/schema/tx 
+       http://www.springframework.org/schema/tx/spring-tx.xsd  
+       http://www.springframework.org/schema/context 
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc   
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       
+       
+    <!-- 加载包中的controller  注解扫描包, 设置使用注解的类所在的jar包 -->  
+ 	<!-- 自动搜索@Controller标注的类 -->
+ 	<context:component-scan base-package="com.jinkun.main.controller"/>
+ 	<context:component-scan base-package="com.jinkun.main.phone"/>
+ 	<context:component-scan base-package="com.jinkun.health.controller"/>
+ 	<mvc:annotation-driven/>
+
+ 	<!-- 开启注解 -->  
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>  
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>  
+    
+  	<!-- 视图分解器 -->  
+  	 <!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="prefix" value="/WEB-INF/"/>  
+        <property name="suffix" value=".jsp"/>  
+    </bean>  
+    
+    
+    <!-- 上传文件的解析器 -->  
+    <!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 --> 
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <property name="defaultEncoding" value="utf-8"/>  
+        <!-- 指定所上传文件的总大小不能超过10G。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 --> 
+        <property name="maxUploadSize" value="10485760000"/>  
+        <property name="maxInMemorySize" value="40960"/>  
+    </bean>  
+    
+     <!-- SpringMVC在超出上传文件限制时，会抛出org.springframework.web.multipart.MaxUploadSizeExceededException -->  
+    <!-- 该异常是SpringMVC在检查上传的文件信息时抛出来的，而且此时还没有进入到Controller方法中 -->  
+    <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
+        <property name="exceptionMappings">  
+            <props>  
+                <!-- 遇到MaxUploadSizeExceededException异常时，自动跳转到/manager/error_fileupload.jsp页面 -->  
+                <prop key="org.springframework.web.multipart.MaxUploadSizeExceededException">/WEB-INF/403.jsp</prop>  
+            </props>  
+        </property>  
+    </bean>  
+    
+    <!-- 完成请求和注解POJO的映射 -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+    
+    <!--配置拦截器, 多个拦截器,顺序执行 -->  
+	<mvc:interceptors>   
+	<!-- 
+	    当设置多个拦截器时，先按顺序调用preHandle方法，然后逆序调用每个拦截器的postHandle和afterCompletion方法   
+	 --> 
+	    <mvc:interceptor>    
+	    <!-- 匹配的是url路径， 如果不配置或/**,将拦截所有的Controller -->
+	        <mvc:mapping path="/**" />
+	        <mvc:exclude-mapping path="/login/*"/>  
+	        <mvc:exclude-mapping path="/index/*"/> 
+	        <mvc:exclude-mapping path="/register/*"/> 
+	        <mvc:exclude-mapping path="/phone/*"/> 
+	        <mvc:exclude-mapping path="/health/*"/> 
+	        <bean class="com.jinkun.interceptor.SessionInterceptor" />    
+	    </mvc:interceptor>  
+
+		<!-- <mvc:interceptor>    
+	        匹配的是url路径， 如果不配置或/**,将拦截所有的Controller 
+	        <mvc:mapping path="/**" />
+	        <mvc:exclude-mapping path="/phone/*"/>
+	        <mvc:exclude-mapping path="/health/*"/> 
+	        <bean class="com.jinkun.interceptor.FullPathInterceptor" />    
+	    </mvc:interceptor> -->
+	    
+	</mvc:interceptors>
+    
+  	<mvc:default-servlet-handler/>
+   
+</beans>

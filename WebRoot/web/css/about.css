@@ -1,0 +1,6 @@
+.content{position:absolute; left:0; top:110px; width:100%; z-index: 1;}
+
+.about_info{width:1200px; height:450px; margin:30px auto; margin-bottom: 30px;}
+.about_info .left{width:1200px; height:100%; float:left; padding-top:30px;}
+.about_info .left p{font-size: 14px; color:#666; margin-top:10px;}
+

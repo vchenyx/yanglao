@@ -1,0 +1,48 @@
+
+*{margin:0; padding:0;}
+.container{width:100%; position: absolute; top:0; bottom: 0;}
+.container .header{width:100%; float:left; border: none;}
+.container .header .header_top{width:100%; height:80px; background: #fff; color:#000; border-bottom: 5px solid #11c1b1;}
+.container .header .header_top .logo{width:456px; height:72px; float:left; margin:8px 0 0 4px; }
+
+/*划过导航时li下边框颜色*/
+.layui-nav-bar{background: #3983e1;}
+/*点击导航每个li后添加背景色*/
+.layui-nav-child dd.layui-this{background-color:#3983e1 ;}
+#infoList dd.layui-this{background-color:#fff ;}
+/*点击‘修改密码’与‘注销’时下边框颜色*/
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{background-color: #363636;}
+
+.container .header .header_top #change,#exit{color:#000;}
+
+.container .header .header_top #username{color:#000;}
+.container .header .header_top #username:hover{color:#000;}
+
+.container .header .header_bottom{width:100%; float:left; background: #009688;}
+.container .header .header_bottom .layui-nav{background: #009688;}
+
+.container .content{width:100%; position: relative; clear:both;}
+
+.layui-nav-item a cite{
+    color: #fff;
+}
+.layui-nav-item dl a cite{
+    color: #2f2f2f;
+}
+
+
+.layui-nav .layui-nav-more {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid dashed dashed;
+    border-color: #fff transparent transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    position: absolute;
+    top: 28px;
+    right: 3px;
+    border-width: 6px;
+}

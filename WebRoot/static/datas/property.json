@@ -1,0 +1,37 @@
+[
+	{
+		"title": "应急管理",
+		"icon": "fa-cubes",
+		"spread": true,
+		"children": [
+			{
+				"title": "报警信息",
+				"icon": "&#xe641;",
+				"href": "roomAlarmInfo.html"
+			}, {
+				"title": "处理报警",
+				"icon": "&#xe63c;",
+				"href": "roomAlarmDeal.html"
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
