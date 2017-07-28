@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+		<mapping class="com.jinkun.main.beans.MUserInfo" />
+		<mapping class="com.jinkun.main.beans.MOldPeopleInfo" />
+		<mapping class="com.jinkun.main.beans.MGuardianInfo" />
+		<!-- <mapping class="com.jinkun.beans.MDuctorInfo" /> -->
+		<mapping class="com.jinkun.main.beans.KnowledgeBase" />
+		<mapping class="com.jinkun.main.beans.KnowledgeBaseInfo" />
+		<mapping class="com.jinkun.main.beans.MPensionStationInfo" />
+		<mapping class="com.jinkun.main.beans.MNurseInfo" />
+		<mapping class="com.jinkun.main.beans.PPushInfo" />
+		<mapping class="com.jinkun.main.beans.LLocationTrackInfo" />
+		<mapping class="com.jinkun.main.beans.LLocationLastInfo" />
+		<mapping class="com.jinkun.main.beans.AAlarmInfo" />
+		<mapping class="com.jinkun.main.beans.AAuditStationInfo" />
+		<mapping class="com.jinkun.main.beans.JAlarmMessageInfo" />
+		<mapping class="com.jinkun.main.beans.FWProvider" />
+		<mapping class="com.jinkun.main.beans.FWProviderType" />
+		<mapping class="com.jinkun.main.beans.FWServiceItems" />
+		<mapping class="com.jinkun.main.beans.GDwork" />
+		<mapping class="com.jinkun.main.beans.GDOrderItems" />
+		<mapping class="com.jinkun.main.beans.CWorkOrderInfo" />
+		<mapping class="com.jinkun.main.beans.CForwardRegistInfo" />
+		<mapping class="com.jinkun.main.beans.CConsultInfo" />
+		<mapping class="com.jinkun.main.beans.CPhoneSOSInfo" />
+		<mapping class="com.jinkun.main.beans.FComplaintInfo" />
+		<mapping class="com.jinkun.main.beans.PensionPeopleDeptInfo" />
+		<mapping class="com.jinkun.main.beans.PensionPeopleInfo" />
+		<mapping class="com.jinkun.main.beans.CServiceRecords" />
+		<mapping class="com.jinkun.main.beans.UnderpinAssist" />
+		<mapping class="com.jinkun.main.beans.MCommunityInfo" />
+		<mapping class="com.jinkun.health.beans.UAnimalHeatInfo" />
+		<mapping class="com.jinkun.health.beans.UBloodInfo" />
+		<mapping class="com.jinkun.health.beans.UBloodOxygenInfo" />
+		<mapping class="com.jinkun.health.beans.UBloodPressureInfo" />
+		<mapping class="com.jinkun.health.beans.UBodyElementInfo" />
+		<mapping class="com.jinkun.health.beans.UECGInfo" />
+		<mapping class="com.jinkun.health.beans.UPissElementInfo" />
+		<mapping class="com.jinkun.health.beans.UDeviceType" />
+		<mapping class="com.jinkun.health.beans.UDeviceInfo" />
+		<mapping class="com.jinkun.health.beans.UDeviceInfo" />
+	</session-factory>
+</hibernate-configuration>

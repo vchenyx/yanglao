@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="error">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<ThresholdFilter level="trace" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout 
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</Console>
+		<File name="logfile" fileName="../logs/bds_cloud/latest.log"
+			append="false">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</File>
+		<RollingFile name="RollingFile" fileName="../logs/bds_cloud/bds_cloud_history.log"
+			filePattern="../logs/bds_cloud_logs/$${date:yyyy-MM}/bds_cloud_history-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout
+				pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="50 MB" />
+		</RollingFile>
+	</appenders>
+	<loggers>
+		<root level="info">
+			<appender-ref ref="logfile" />
+			<appender-ref ref="RollingFile" />
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+</configuration> 
+<!-- Windows Version 	with  charset="GBK"
+<?xml version="1.0" encoding="GBK"?>
+<configuration status="error">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<ThresholdFilter level="trace" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout charset="GBK" 
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</Console>
+		<File name="logfile" fileName="../logs/bds_cloud/latest.log"
+			append="false">
+			<PatternLayout charset="GBK" 
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</File>
+		<RollingFile name="RollingFile" fileName="../logs/bds_cloud/bds_cloud_history.log"
+			filePattern="../logs/bds_cloud/$${date:yyyy-MM}/bds_cloud_history-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout charset="GBK" 
+				pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="50 MB" />
+		</RollingFile>
+	</appenders>
+	<loggers>
+		<root level="info">
+			<appender-ref ref="logfile" />
+			<appender-ref ref="RollingFile" />
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+</configuration> 
+ -->
